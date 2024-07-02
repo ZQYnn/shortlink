@@ -29,6 +29,7 @@ public class ShortLinkServiceImpl extends ServiceImpl<ShortLinkMapper, ShortLink
                 .build();
     }
 
+
     private String generateSuffix(ShortLinkCreateReqDTO requestParam) {
         String originUrl = requestParam.getOriginUrl();
         return HashUtil.hashToBase62(originUrl);
