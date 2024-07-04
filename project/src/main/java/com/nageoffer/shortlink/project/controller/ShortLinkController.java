@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 public class ShortLinkController {
-
     private final ShortLinkService shortLinkService;
-
 
     /**
      * 创建短链接
