@@ -1,4 +1,4 @@
-package com.nageoffer.shortlink.admin.remote.dto;
+package com.nageoffer.shortlink.admin.remote;
 
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson2.JSON;
@@ -20,7 +20,6 @@ public interface ShortLinkRemoteService {
 
     /**
      * 创建短链接
-     *
      * @param requestParam 创建短链接请求参数
      * @return 短链接创建响应
      */
@@ -30,10 +29,9 @@ public interface ShortLinkRemoteService {
         return JSON.parseObject(resultBodyStr, new TypeReference<>() {
         });
     }
-
+    //
     /**
      * 分页查询短链接
-     *
      * @param requestParam 分页短链接请求参数
      * @return 查询短链接响应
      */
